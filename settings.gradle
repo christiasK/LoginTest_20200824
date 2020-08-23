@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "LoginTest_20200824"
