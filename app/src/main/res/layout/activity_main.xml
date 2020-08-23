@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,10 +12,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
         <ImageView
             android:layout_width="272dp"
             android:layout_height="92dp"
+            android:scaleType="centerCrop"
             android:src="@drawable/google_logo_color_272x92dp"/>
     </LinearLayout>
 
@@ -24,6 +25,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="아이디"
+        android:textColor="#222222"
+        android:textStyle="bold"
         android:layout_marginTop="20dp" />
 
     <EditText
@@ -36,20 +39,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:textColor="#222222"
+        android:textStyle="bold"
         android:text="비밀번호" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="비밀번호 입력"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         android:inputType="textPassword" />
 
     <CheckBox
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="자동로그인"
+        android:layout_marginTop="5dp"
         android:enabled="false" />
-
 
     <TextView
         android:layout_width="0dp"
